@@ -153,7 +153,7 @@ def create_grid(polygon, distance) -> list[list[Point]]:
     return grid
 
 
-def grid(lat_p1: float, long_p1: float, lat_p2: float, long_p2: float, distance_arg: float | None) -> list[list[Point]]:
+def grid(lat_p1: float, long_p1: float, lat_p2: float, long_p2: float, distance_arg:float=None) -> list[list[Point]]:
     """Function to create a grid of poligons that divides a geographical area in 
     small áreas of optimal size to make web scrapping on AirBnb, each poligon in 
     the grid has four points. Returns a list of Poligons.
